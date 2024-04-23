@@ -22,4 +22,5 @@ years = int(input('Cantidad de años?: '))
 
 for year in range(1, years + 1):
     money += money * (interest / 100)
-    print('Capital tras el año {}: {}'.format(year, money))
+    print(F'Capital tras el año {year}: {money}')
+    

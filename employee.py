@@ -31,4 +31,4 @@ elif points in range(4,6):
 elif points in range(7,10):
     level = 'Meritorio'
 
-print('Nivel de rendimiento "{}" , Cantidad de dinero recibido ${}'.format(level,pay))
+print(F'Nivel de rendimiento "{level}" , Cantidad de dinero recibido ${pay}')

@@ -25,17 +25,17 @@ money = int(input('Ingres la catidad de dinero a convertir: '))
 while money > 0:
     if 20 <= money :
         coin20 = money // 20
-        money -= coin20 * 20
+        money %= 20
     elif 10 <= money:
         coin10 = money // 10
-        money -= coin10 * 10
+        money %= 10
     elif 5 <= money:
         coin5 = money // 5
-        money -= coin5 * 5
+        money %= 5
     elif 1 <= money:
         coin1 = money // 1
-        money -= coin1 * 1
+        money %= 1
 
-print('La cantidad de monedas son: \nmonedas de $20: {}\nmonedas de $10: {}\nmonedas de $5 son: {} \nmonedas de $1: {} \nsobra ${}'.format(coin20,coin10,coin5,coin1,money))
+print(f'La cantidad de monedas son: \nmonedas de $20: {coin20}\nmonedas de $10: {coin10}\nmonedas de $5 son: {coin5} \nmonedas de $1: {coin1} \nsobra ${money}')
 
     
